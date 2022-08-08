@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "name": "[ROOT]",
+      "path": ".."
+    },
+    {
+      "name": "[PKG] @lavacharts/core",
+      "path": "../packages/core"
+    },
+    {
+      "name": "[PKG] @lavacharts/react",
+      "path": "../packages/react"
+    },
+    {
+      "name": "[SITE] React",
+      "path": "../sites/react"
+    },
+    {
+      "name": "[SITE] Vanilla",
+      "path": "../sites/parcel-demo"
+    },
+    {
+      "name": "[SITE] Documentation",
+      "path": "../sites/docs"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint"
+    ]
+  },
+  "settings": {
+    "eslint.debug": true,
+    "eslint.workingDirectories": [
+      "./sites/*",
+      "./packages/*",
+    ],
+    "files.associations": {
+      "*.json": "jsonc"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "packages": true,
+      "sites": true,
+      "**/node_modules": true
+    }
+  }
+}

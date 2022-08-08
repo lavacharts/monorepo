@@ -1,0 +1,25 @@
+/// <reference types="google.visualization" />
+import type { Chart } from "../Chart";
+import type { ChartSpecWithOptions } from "../types";
+export declare function AnnotationChart(config: ChartSpecWithOptions<google.visualization.AnnotationChartOptions>): Chart;
+export declare function AreaChart(config: ChartSpecWithOptions<google.visualization.AreaChartOptions>): Chart;
+export declare function BarChart(config: ChartSpecWithOptions<google.visualization.BarChartOptions>): Chart;
+export declare function BubbleChart(config: ChartSpecWithOptions<google.visualization.BubbleChartOptions>): Chart;
+export declare function CalendarChart(config: ChartSpecWithOptions<google.visualization.CalendarOptions>): Chart;
+export declare function CandlestickChart(config: ChartSpecWithOptions<google.visualization.CandlestickChartOptions>): Chart;
+export declare function ColumnChart(config: ChartSpecWithOptions<google.visualization.ColumnChartOptions>): Chart;
+export declare function ComboChart(config: ChartSpecWithOptions<google.visualization.ComboChartOptions>): Chart;
+export declare function DonutChart(config: ChartSpecWithOptions<google.visualization.PieChartOptions>): Chart;
+export declare function GanttChart(config: ChartSpecWithOptions<google.visualization.GanttChartOptions>): Chart;
+export declare function GaugeChart(config: ChartSpecWithOptions<google.visualization.GaugeChartOptions>): Chart;
+export declare function GeoChart(config: ChartSpecWithOptions<google.visualization.GeoChartOptions>): Chart;
+export declare function HistogramChart(config: ChartSpecWithOptions<google.visualization.HistogramHistogramOptions>): Chart;
+export declare function LineChart(config: ChartSpecWithOptions<google.visualization.LineChartOptions>): Chart;
+export declare function PieChart(config: ChartSpecWithOptions<google.visualization.PieChartOptions>): Chart;
+export declare function SankeyChart(config: ChartSpecWithOptions<google.visualization.SankeyChartOptions>): Chart;
+export declare function ScatterChart(config: ChartSpecWithOptions<google.visualization.ScatterChartOptions>): Chart;
+export declare function SteppedAreaChart(config: ChartSpecWithOptions<google.visualization.SteppedAreaChartOptions>): Chart;
+export declare function TableChart(config: ChartSpecWithOptions<google.visualization.TableOptions>): Chart;
+export declare function TimelineChart(config: ChartSpecWithOptions<google.visualization.TimelineOptions>): Chart;
+export declare function TreeMapChart(config: ChartSpecWithOptions<google.visualization.TreeMapOptions>): Chart;
+export declare function WordTreeChart(config: ChartSpecWithOptions<unknown>): Chart;

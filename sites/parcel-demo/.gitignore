@@ -1,0 +1,12 @@
+.vscode/
+.idea/
+.parcel-cache/
+node_modules/
+cypress/
+dist/
+public/
+build/
+
+
+*.log
+.eslintcache

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  {{> partials/head }}
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    {{> partials/navbar }}
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container center">
+      <h1 class="header orange-text">DataQuery</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">fetch remote data</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+      <div class="row">
+        <div class="card col s12">
+          <div class="valign-wrapper">
+            <h5><i class="left material-icons">insert_chart</i>Range Querys</h5>
+          </div>
+          <p>If the <code>data</code> parameter of your chart object follows the interface of
+            <code>{ sheetId, range }</code> with <code>sheetId</code> as a Google Sheet id and <code>range</code> as a
+            <a target="_blank"
+              href="https://developers.google.com/chart/interactive/docs/spreadsheets#query-source-ranges">Query Source
+              Range</a>, then a <a target="_blank"
+              href="https://developers.google.com/chart/interactive/docs/reference#Query">Query</a> object will be
+            created. The query will be sent automatically and update the chart with the data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="row">
+
+        <div class="col s12 m6">
+          <div class="icon-block center z-depth-1">
+            <div class="icon-block-header">
+              <h2 class="light-blue-text">Google Sheets</h2>
+              <h5>have data in sheets?</h5>
+            </div>
+            <pre class="language-javascript">
+              <code>
+{{ exampleCode }}</code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block center z-depth-1">
+            <div class="icon-block-header">
+              <h2 class="light-blue-text">Integration</h2>
+              <h5>lets get it!</h5>
+            </div>
+            {{> partials/chart-div }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    {{> partials/footer }}
+  </footer>
+</body>
+
+</html>

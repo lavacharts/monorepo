@@ -1,0 +1,57 @@
+{
+  "name": "@lavacharts/core",
+  "version": "4.0.0-rc1",
+  "private": true,
+  "description": "Wrapper library for the Google Chart API",
+  "keywords": [
+    "google",
+    "charts",
+    "graphs",
+    "lavacharts",
+    "javascript",
+    "typescript"
+  ],
+  "homepage": "https://lavacharts.github.io/lava.js/",
+  "bugs": {
+    "url": "https://github.com/lavacharts/lava.js/issues"
+  },
+  "repository": "git+https://github.com/lavacharts/lava.js.git",
+  "license": "MIT",
+  "author": "Kevin Hill",
+  "main": "./src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dist": "tsup && pnpm types",
+    "types": "pnpm clean:dts && tsc --emitDeclarationOnly --declaration",
+    "lint": "eslint . --cache --fix --ext .ts,.tsx",
+    "clean": "rimraf ./dist/**/*.*",
+    "clean:js": "rimraf ./dist/**/*.js",
+    "clean:dts": "rimraf ./dist/**/*.d.ts"
+  },
+  "dependencies": {
+    "mobx": "^6.6.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/google.visualization": "^0.0.68",
+    "@types/node": "^18.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.2.0",
+    "typescript": "^4.7.4"
+  }
+}

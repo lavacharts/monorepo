@@ -1,0 +1,10 @@
+.vscode/
+.rush/
+
+dist/
+coverage/
+node_modules/
+
+apps/*/node_modules/
+tools/*/node_modules/
+packages/*/node_modules/

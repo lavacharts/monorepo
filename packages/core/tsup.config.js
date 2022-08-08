@@ -1,0 +1,12 @@
+import path from "path";
+import { defineConfig } from "tsup";
+
+export default defineConfig({
+  entry: ["src/index.ts"],
+  // dts: true,
+  clean: true,
+  sourcemap: true,
+  splitting: false,
+  platform: "browser",
+  tsconfig: path.join(__dirname, "tsconfig.json")
+});

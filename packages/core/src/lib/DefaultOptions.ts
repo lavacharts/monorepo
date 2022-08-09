@@ -1,4 +1,4 @@
-import type { LavaJsOptions } from "./types";
+import type { LavaJsOptions } from "../types";
 
 export const DefaultOptions = {
   autodraw: true,

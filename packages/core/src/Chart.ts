@@ -1,5 +1,5 @@
-import { getChartClass } from "./ChartProps";
 import { Drawable } from "./Drawable";
+import { getChartClass } from "./lib/ChartProps";
 import { getContainer } from "./lib/utils";
 
 import type { ChartClasses, ChartSpec, ChartTypes } from "./types";

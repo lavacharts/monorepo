@@ -1,4 +1,3 @@
-import { lava } from "../LavaJs";
 import { instanceOfDataQuery, newGoogleClass } from "./utils";
 
 /**
@@ -8,7 +7,7 @@ export async function createDataTable(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload: any
 ): Promise<google.visualization.DataTable> {
-  const google = await lava.getLoader().loadGoogle();
+  const { google } = window;
 
   // If this is a DataQuery, then send it!
   if (instanceOfDataQuery(payload)) {

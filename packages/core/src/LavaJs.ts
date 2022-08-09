@@ -10,7 +10,7 @@ import {
 import { Binding } from "./Binding";
 import { Chart } from "./Chart";
 import { Dashboard } from "./Dashboard";
-import { DefaultOptions } from "./DefaultOptions";
+import { DefaultOptions } from "./lib/DefaultOptions";
 import { GoogleLoader } from "./lib/GoogleLoader";
 import { debounce, domReady, makeDebugger } from "./lib/utils";
 

@@ -58,7 +58,7 @@ export class Binding {
   public async getControlWraps(): Promise<
     google.visualization.ControlWrapper[]
   > {
-    const google = await lava.getLoader().loadGoogle();
+    const { google } = window;
 
     if (this.controlWraps.length === 1) {
       return newGoogleClass(google, "ControlWrapper", ...this.controlWraps);
@@ -72,7 +72,7 @@ export class Binding {
   }
 
   public async getChartWraps(): Promise<google.visualization.ChartWrapper[]> {
-    const google = await lava.getLoader().loadGoogle();
+    const { google } = window;
 
     if (this.chartWraps.length === 1) {
       return newGoogleClass(google, "ChartWrapper", ...this.chartWraps);

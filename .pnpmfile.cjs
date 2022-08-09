@@ -9,7 +9,7 @@ const enforceSingleVersion = [
 
 
 function afterAllResolved(lockfile, context) {
-  context.log(`Checking duplicate packages`);
+  context.log(`Checking for duplicated packages...`);
 
   const found = {};
   const packagesKeys = Object.keys(lockfile.packages);
@@ -37,8 +37,9 @@ function afterAllResolved(lockfile, context) {
   }
 
   if (msg) {
-    // throw new Error(msg);
-    context.log(msg);
+    context.log(Error(msg));
+  } else {
+    context.log(`None found!`);
   }
 
   return lockfile;

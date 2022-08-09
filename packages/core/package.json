@@ -11,25 +11,28 @@
     "javascript",
     "typescript"
   ],
-  "homepage": "https://lavacharts.github.io/lava.js/",
+  "homepage": "https://lavacharts.github.io/core/",
   "bugs": {
-    "url": "https://github.com/lavacharts/lava.js/issues"
+    "url": "https://github.com/lavacharts/core/issues"
   },
-  "repository": "git+https://github.com/lavacharts/lava.js.git",
+  "repository": "git+https://github.com/lavacharts/core.git",
   "license": "MIT",
-  "author": "Kevin Hill",
+  "author": {
+    "name": "Kevin Hill",
+    "email": "kevinkhill@pm.me"
+  },
   "main": "./src/index.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsup",
-    "dist": "tsup && pnpm types",
-    "types": "pnpm clean:dts && tsc --emitDeclarationOnly --declaration",
-    "lint": "eslint . --cache --fix --ext .ts,.tsx",
     "clean": "rimraf ./dist/**/*.*",
+    "clean:dts": "rimraf ./dist/**/*.d.ts",
     "clean:js": "rimraf ./dist/**/*.js",
-    "clean:dts": "rimraf ./dist/**/*.d.ts"
+    "dist": "tsup && pnpm types",
+    "lint": "eslint . --cache --fix --ext .ts,.tsx",
+    "types": "pnpm clean:dts && tsc --emitDeclarationOnly --declaration"
   },
   "dependencies": {
     "mobx": "^6.6.1"

@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
+  "author": {
+    "name": "Kevin Hill",
+    "email": "kevinkhill@pm.me"
+  },
   "workspaces": {
     "packages": [
       "packages/*",
@@ -10,13 +14,16 @@
     ]
   },
   "scripts": {
-    "demo": "pnpm -F core demo",
+    "demo": "pnpm -F parcel-demo demo",
     "dev": "pnpm -F react dev"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@manypkg/cli": "^0.19.1",
+    "@pnpm/meta-updater": "kevinkhill/meta-updater#pre-built",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.32.0",
+    "chalk": "^5.0.1",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^2.7.1",

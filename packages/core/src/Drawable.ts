@@ -1,5 +1,5 @@
 import { DataQuery } from "./DataQuery";
-import { createDataTable } from "./lib/datatable";
+import { createDataTable } from "./lib/createDataTable";
 import {
   getContainer,
   instanceOfRangeQuery,

@@ -62,9 +62,12 @@ export class DataQuery {
    * Send the DataQuery
    */
   public async send(): Promise<google.visualization.QueryResponse> {
-    const google = await lava.getLoader().loadGoogle();
-
-    let query = await newGoogleClass(google, "Query", this.url, this.opts);
+    let query = await newGoogleClass(
+      window.google,
+      "Query",
+      this.url,
+      this.opts
+    );
 
     if (this.transformer) {
       query = this.transformer(query);

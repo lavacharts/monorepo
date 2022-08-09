@@ -31,5 +31,10 @@
     "vite": "^3.0.0",
     "vite-plugin-windicss": "^1.8.7",
     "windicss": "^3.5.6"
-  }
+  },
+  "author": {
+    "name": "Kevin Hill",
+    "email": "kevinkhill@pm.me"
+  },
+  "license": "MIT"
 }

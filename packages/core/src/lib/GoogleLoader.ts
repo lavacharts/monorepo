@@ -1,12 +1,12 @@
 import { action, makeObservable, observable } from "mobx";
 
 import { Chart } from "../Chart";
-import { getChartPackage } from "../ChartProps";
 import { Dashboard } from "../Dashboard";
 import { instanceOfDashboard, makeDebugger } from "../lib/utils";
+import { getChartPackage } from "./ChartProps";
 import { injectStaticLoader } from "./static-loader";
 
-import type { GoogleHandler, GoogleLoaderOptions } from "../types";
+import type { GoogleLoaderOptions } from "../types";
 
 const debug = makeDebugger("GoogleLoader");
 
